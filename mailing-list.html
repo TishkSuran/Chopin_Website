@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frédéric Chopin | Mailing List</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mailing-list.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Chopin</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="nocturnes.html">Nocturnes</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="interactive.html">Interactive</a></li>
+                    <li><a href="mailing-list.html" class="active">Mailing List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-content">
+            <section class="hero-section mailing-hero">
+                <div>
+                    <p class="composer">JOIN US</p>
+                    <h1>Chopin Mailing List</h1>
+                    <p>Subscribe to receive updates about Chopin-related events, new recordings, articles, and exclusive content.</p>
+                </div>
+            </section>
+
+            <section class="subscription-content">
+                <div class="subscription-benefits">
+                    <h2 class="section-title">Why Subscribe?</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3>Monthly Newsletter</h3>
+                            <p>Receive our curated monthly newsletter featuring articles about Chopin's life, works, and influence on classical music.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3>Event Notifications</h3>
+                            <p>Stay informed about concerts, recitals, masterclasses, and festivals dedicated to Chopin's music around the world.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3>Exclusive Content</h3>
+                            <p>Access to exclusive interviews with renowned pianists, historical analyses, and special recordings not available to the general public.</p>
+                        </div>
+                        
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3>Educational Resources</h3>
+                            <p>Receive teaching materials, practice guides, and performance tips for pianists interested in studying and performing Chopin's works.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="subscription-form-container">
+                    <h2 class="section-title">Subscribe Today</h2>
+                    <form id="mailing-list-form" class="subscription-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interest">Primary Interest</label>
+                            <select id="interest" name="interest">
+                                <option value="general">General Appreciation</option>
+                                <option value="pianist">I'm a Pianist</option>
+                                <option value="teacher">I'm a Music Teacher</option>
+                                <option value="student">I'm a Music Student</option>
+                                <option value="researcher">I'm a Researcher/Scholar</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" checked>
+                                Monthly Newsletter
+                            </label>
+                            
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="events" checked>
+                                Event Notifications
+                            </label>
+                            
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="educational">
+                                Educational Resources
+                            </label>
+                            
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="recordings">
+                                New Recording Releases
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comments">Additional Comments (Optional)</label>
+                            <textarea id="comments" name="comments" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group privacy-consent">
+                            <label class="checkbox-label required">
+                                <input type="checkbox" name="privacy" required>
+                                I agree to the <a href="#" class="accent-link">Privacy Policy</a> and consent to receiving emails.
+                            </label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn subscribe-btn">Subscribe</button>
+                        </div>
+                    </form>
+                    
+                    <div id="subscription-message" class="subscription-message hidden">
+                        <div class="message-content success">
+                            <svg class="message-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" fill="currentColor"/>
+                            </svg>
+                            <p>Thank you for subscribing! Please check your email for confirmation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="testimonials">
+                <h2 class="section-title">From Our Subscribers</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <blockquote>
+                                "The monthly newsletter has greatly enhanced my understanding of Chopin's nocturnes. The performance insights from world-class pianists are invaluable for my own interpretations."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="/api/placeholder/40/40" alt="Maria K.">
+                                </div>
+                                <div class="author-info">
+                                    <p class="author-name">Maria K.</p>
+                                    <p class="author-title">Concert Pianist</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <blockquote>
+                                "As a music history professor, I've found the exclusive articles and historical analyses to be meticulously researched and full of new perspectives on Chopin's life and works."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="/api/placeholder/40/40" alt="Dr. James T.">
+                                </div>
+                                <div class="author-info">
+                                    <p class="author-name">Dr. James T.</p>
+                                    <p class="author-title">Music History Professor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <blockquote>
+                                "The educational resources have transformed my teaching approach. My students are more engaged with Chopin's music and better understand his innovative techniques."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="/api/placeholder/40/40" alt="Sarah M.">
+                                </div>
+                                <div class="author-info">
+                                    <p class="author-name">Sarah M.</p>
+                                    <p class="author-title">Piano Teacher</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-arrow prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                    <div class="slider-dots">
+                        <button class="slider-dot active"></button>
+                        <button class="slider-dot"></button>
+                        <button class="slider-dot"></button>
+                    </div>
+                    <button class="slider-arrow next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Chopin</div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="biography.html">Biography</a></li>
+                            <li><a href="works.html">Works</a></li>
+                            <li><a href="nocturnes.html">Nocturnes</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="interactive.html">Interactive</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact</h3>
+                        <p>For inquiries: <a href="mailto:info@chopinmusic.org">info@chopinmusic.org</a></p>
+                        <p>Subscribe to our <a href="mailing-list.html">mailing list</a> for updates.</p>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Chopin Music Appreciation Society. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/mailing-list.js"></script>
+</body>
+</html>

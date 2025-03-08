@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frédéric Chopin | Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Chopin</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="nocturnes.html">Nocturnes</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="interactive.html">Interactive</a></li>
+                    <li><a href="mailing-list.html">Mailing List</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="main-content">
+            <section class="hero-section gallery-hero">
+                <div>
+                    <p class="composer">VISUAL ARCHIVE</p>
+                    <h1>Chopin Gallery</h1>
+                    <p>Explore portraits, manuscripts, historical locations, and other visual artifacts related to Chopin's life and work.</p>
+                </div>
+            </section>
+
+            <section class="gallery-nav">
+                <div class="gallery-categories">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="portraits">Portraits</button>
+                    <button class="category-btn" data-category="manuscripts">Manuscripts</button>
+                    <button class="category-btn" data-category="places">Places</button>
+                    <button class="category-btn" data-category="memorabilia">Memorabilia</button>
+                </div>
+            </section>
+
+            <section class="gallery-grid">
+                <!-- Portraits -->
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-image">
+                        <img src="/api/placeholder/400/300" alt="Chopin portrait by Delacroix">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Portrait by Eugène Delacroix</h3>
+                                <p>1838</p>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 9l-9 9-9-9 1.41-1.41L12 15.17l7.59-7.59L21 9z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-details">
+                        <p>Eugène Delacroix, a close friend of Chopin, created this portrait showing the composer alongside George Sand. The painting captures Chopin at the piano with Sand listening nearby, illustrating their personal and artistic relationship.</p>
+                        <p>This unfinished portrait is housed in the Louvre Museum in Paris.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="portraits">
+                    <div class="gallery-image">
+                        <img src="/api/placeholder/400/300" alt="Chopin portrait by Ary Scheffer">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Portrait by Ary Scheffer</h3>
+                                <p>1847</p>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 9l-9 9-9-9 1.41-1.41L12 15.17l7.59-7.59L21 9z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-details">
+                        <p>This portrait by Dutch-French Romantic painter Ary Scheffer shows Chopin two years before his death. It captures the composer's frail condition, with his characteristic elegant poise nonetheless preserved.</p>
+                        <p>The portrait is now in the collection of the Dordrechts Museum in the Netherlands.</p>
+                    </div>
+                </div>
+
+                <!-- Manuscripts -->
+                <div class="gallery-item" data-category="manuscripts">
+                    <div class="gallery-image">
+                        <img src="/api/placeholder/400/300" alt="Manuscript of Nocturne Op. 9 No. 2">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Manuscript: Nocturne in E♭ major</h3>
+                                <p>Op. 9 No. 2, 1832</p>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 9l-9 9-9-9 1.41-1.41L12 15.17l7.59-7.59L21 9z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-details">
+                        <p>This manuscript of Chopin's most famous nocturne reveals his meticulous notation and attention to detail. The manuscript contains performance directions and fingerings in the composer's hand.</p>
+                        <p>Chopin was known for his precise notation, especially regarding pedal markings and expressive indications.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="manuscripts">
+                    <div class="gallery-image">
+                        <img src="/api/placeholder/400/300" alt="Manuscript of Ballade No. 1">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Manuscript: Ballade No. 1 in G minor</h3>
+                                <p>Op. 23, 1835</p>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 9l-9 9-9-9 1.41-1.41L12 15.17l7.59-7.59L21 9z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-details">
+                        <p>This manuscript shows Chopin's revolutionary Ballade form, one of his most significant contributions to piano literature. The Ballade No. 1 was dedicated to Baron Nathaniel von Stockhausen.</p>
+                        <p>The manuscript shows several revisions and changes, offering insight into Chopin's compositional process.</p>
+                    </div>
+                </div>
+
+                <!-- Places -->
+                <div class="gallery-item" data-category="places">
+                    <div class="gallery-image">
+                        <img src="/api/placeholder/400/300" alt="Żelazowa Wola">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Żelazowa Wola</h3>
+                                <p>Chopin's Birthplace</p>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 9l-9 9-9-9 1.41-1.41L12 15.17l7.59-7.59L21 9z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-details">
+                        <p>Chopin was born in this manor house in Żelazowa Wola, Poland, where his father worked as a tutor. Today, the house has been transformed into a museum dedicated to the composer.</p>
+                        <p>The surrounding park features sculptures and hosts regular concerts of Chopin's music during the summer months.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="places">
+                    <div class="gallery-image">
+                        <img src="/api/placeholder/400/300" alt="Nohant Estate">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>George Sand's Estate at Nohant</h3>
+                                <p>France</p>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 9l-9 9-9-9 1.41-1.41L12 15.17l7.59-7.59L21 9z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-details">
+                        <p>Chopin spent seven summers at the country estate of his companion, writer George Sand, in Nohant, France. These summers were among his most productive periods, during which he composed many significant works.</p>
+                        <p>The peaceful environment and Sand's support provided Chopin with ideal conditions for composition.</p>
+                    </div>
+                </div>
+
+                <!-- Memorabilia -->
+                <div class="gallery-item" data-category="memorabilia">
+                    <div class="gallery-image">
+                        <img src="/api/placeholder/400/300" alt="Chopin's Piano">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Pleyel Piano</h3>
+                                <p>Chopin's Preferred Instrument</p>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 9l-9 9-9-9 1.41-1.41L12 15.17l7.59-7.59L21 9z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-details">
+                        <p>Chopin preferred Pleyel pianos above all others, appreciating their sensitive action and tonal qualities. He once remarked, "When I feel out of sorts, I play on an Érard piano where I easily find a ready-made tone. But when I feel in good form and strong enough to find my own tone, I need a Pleyel piano."</p>
+                        <p>This particular Pleyel piano was used by Chopin during his later Paris years.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="memorabilia">
+                    <div class="gallery-image">
+                        <img src="/api/placeholder/400/300" alt="Chopin's death mask">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Death Mask</h3>
+                                <p>1849</p>
+                            </div>
+                            <button class="gallery-expand-btn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 9l-9 9-9-9 1.41-1.41L12 15.17l7.59-7.59L21 9z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="gallery-details">
+                        <p>After Chopin's death on October 17, 1849, a cast was made of his face—a common practice for notable figures of the time. The death mask preserves the composer's delicate features and has become an important historical artifact.</p>
+                        <p>A cast of Chopin's hands was also made, preserving the shape of the hands that created some of the most celebrated piano music ever written.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close">×</button>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Chopin</div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="biography.html">Biography</a></li>
+                            <li><a href="works.html">Works</a></li>
+                            <li><a href="nocturnes.html">Nocturnes</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="interactive.html">Interactive</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact</h3>
+                        <p>For inquiries: <a href="mailto:info@chopinmusic.org">info@chopinmusic.org</a></p>
+                        <p>Subscribe to our <a href="mailing-list.html">mailing list</a> for updates.</p>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Chopin Music Appreciation Society. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>
