@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frédéric Chopin | Timeless Piano Compositions</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/static-waveform.css">
 </head>
 <body>
     <header>
@@ -44,43 +45,24 @@
         <section class="music-player">
             <h2 class="section-title">Explore Chopin's Nocturnes</h2>
             
-            <div class="track" data-src="Nocturne.mp3">
+            <div id="track-1" class="track" data-src="assets/audio/Nocturne.mp3">
+                <div class="loading-indicator"></div>
                 <div class="track-info">
                     <div class="album-art">
-                        <img src="Nocturne.jpg" alt="Album cover">
+                        <img src="assets/images/Nocturne_Image_One.jpg" alt="Album cover">
                     </div>
                     <div class="track-details">
                         <h3>Nocturne in F minor, Op. 55 No. 1</h3>
                         <p>Chopin</p>
                     </div>
                 </div>
-                <div class="waveform paused">
-                    <div class="waveform-bar" style="height: 60%;"></div>
-                    <div class="waveform-bar" style="height: 30%;"></div>
-                    <div class="waveform-bar" style="height: 80%;"></div>
-                    <div class="waveform-bar" style="height: 40%;"></div>
-                    <div class="waveform-bar" style="height: 70%;"></div>
-                    <div class="waveform-bar" style="height: 20%;"></div>
-                    <div class="waveform-bar" style="height: 50%;"></div>
-                    <div class="waveform-bar" style="height: 90%;"></div>
-                    <div class="waveform-bar" style="height: 30%;"></div>
-                    <div class="waveform-bar" style="height: 60%;"></div>
-                    <div class="waveform-bar" style="height: 40%;"></div>
-                    <div class="waveform-bar" style="height: 70%;"></div>
-                    <div class="waveform-bar" style="height: 50%;"></div>
-                    <div class="waveform-bar" style="height: 80%;"></div>
-                    <div class="waveform-bar" style="height: 20%;"></div>
-                    <div class="waveform-bar" style="height: 90%;"></div>
-                    <div class="waveform-bar" style="height: 40%;"></div>
-                    <div class="waveform-bar" style="height: 60%;"></div>
-                    <div class="waveform-bar" style="height: 30%;"></div>
-                    <div class="waveform-bar" style="height: 70%;"></div>
-                </div>
+                
+                <!-- Waveform will be added by JavaScript -->
+                
                 <div class="track-controls">
-                    <div class="track-duration">5:37</div>
                     <div class="genre-tag">Romantic, Piano</div>
                     <div class="track-actions">
-                        <button class="play-btn" onclick="togglePlay(this)">
+                        <button class="play-btn">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
                             </svg>
@@ -104,7 +86,8 @@
                 </div>
             </div>
 
-            <div class="track" data-src="nocturne-e-flat.mp3">
+            <div id="track-2" class="track" data-src="assets/audio/nocturne-e-flat.mp3">
+                <div class="loading-indicator"></div>
                 <div class="track-info">
                     <div class="album-art">
                         <img src="/api/placeholder/60/60" alt="Album cover">
@@ -114,33 +97,13 @@
                         <p>Expressive Lyrical Style</p>
                     </div>
                 </div>
-                <div class="waveform paused">
-                    <div class="waveform-bar" style="height: 50%;"></div>
-                    <div class="waveform-bar" style="height: 70%;"></div>
-                    <div class="waveform-bar" style="height: 40%;"></div>
-                    <div class="waveform-bar" style="height: 60%;"></div>
-                    <div class="waveform-bar" style="height: 80%;"></div>
-                    <div class="waveform-bar" style="height: 30%;"></div>
-                    <div class="waveform-bar" style="height: 90%;"></div>
-                    <div class="waveform-bar" style="height: 60%;"></div>
-                    <div class="waveform-bar" style="height: 40%;"></div>
-                    <div class="waveform-bar" style="height: 70%;"></div>
-                    <div class="waveform-bar" style="height: 50%;"></div>
-                    <div class="waveform-bar" style="height: 80%;"></div>
-                    <div class="waveform-bar" style="height: 30%;"></div>
-                    <div class="waveform-bar" style="height: 60%;"></div>
-                    <div class="waveform-bar" style="height: 90%;"></div>
-                    <div class="waveform-bar" style="height: 40%;"></div>
-                    <div class="waveform-bar" style="height: 70%;"></div>
-                    <div class="waveform-bar" style="height: 50%;"></div>
-                    <div class="waveform-bar" style="height: 80%;"></div>
-                    <div class="waveform-bar" style="height: 30%;"></div>
-                </div>
+                
+                <!-- Waveform will be added by JavaScript -->
+                
                 <div class="track-controls">
-                    <div class="track-duration">4:12</div>
                     <div class="genre-tag">Romantic, Piano</div>
                     <div class="track-actions">
-                        <button class="play-btn" onclick="togglePlay(this)">
+                        <button class="play-btn">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M8 5V19L19 12L8 5Z" fill="currentColor"/>
                             </svg>
@@ -165,7 +128,7 @@
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
 
+    <script src="js/static-waveform.js"></script>
 </body>
 </html>
